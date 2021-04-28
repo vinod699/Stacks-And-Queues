@@ -1,3 +1,4 @@
+
 package com.stack;
 public class mystack {
 
@@ -11,12 +12,16 @@ public class mystack {
         myLinkedList.add(myNode);
     }
 
-    public void printStack(){
+    public void show(){
         myLinkedList.show();
     }
 
-    //it is used to peak  the element from the stack.
     public INode peak(){
         return myLinkedList.head;
     }
+
+    public INode pop() {
+        return myLinkedList.pop();
+    }
+
 }
